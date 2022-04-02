@@ -1,0 +1,381 @@
+2. alert("I m invoked!");.....
+3.Explain the below how it works
+alert("I'm JavaScript!");
+alert("Hello") // this line is not having semicolon..no need importent is semicolo..the javascript is run at with out semicolon;
+alert("World")
+alert(3 +
+1
++ 2); // this is multiple line code and its working...yes its working
+4. Fix the below to alert Guvi geek..................
+fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+
+alert(`${fname} ${lname}`); // "Guvi geek"
+5. Fix the below to alert hello Guvi geek..........
+let fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+let name = fname+lname;
+alert( `hello ${name}` );
+6.Fix the below to alert sum of two numbers.............................
+let a = prompt("First number?");
+let b = prompt("Second number?");
+let temp=Number(a)+Number(b)
+alert(temp);
+7.If you run the below scritpt you will get “Code is Blasted”
+Explain Why the Code is blasted and how to diffuse it and get “Diffused”....................................
+var a = "2" < "12";
+//Don't touch below this
+if (a) {
+  alert("Code is Blasted")
+}
+else
+{
+  alert("Diffused") 
+}
+8.How to get the success in console.......
+let a = prompt("Enter a number?");
+a=false;
+
+//Don't modify any code bellow this
+if (a) {
+console.log( 'OMG it works for any number inc 0' );
+}
+else
+{
+ console.log( "Success" );
+}
+9.How to get the correct score in console...................
+let value1 = prompt('How many runs you scored in this ball');
+let value=parseInt(value1)
+if (value === 4) {
+      alert("You hit a Four");
+} else if (value === 6) {
+      alert("You hit a Six");
+} else {
+      alert("I couldn't figure out");
+}
+10.Fix the code to welcome the Employee..............
+let login = 'Employee';
+let message = (login == 'Employee') ||
+  (login == 'Director') || (login =='Greetings') ||
+  (login == 'No login')
+  '';
+console.log(message);
+11.Fix the code to welcome the boss.........
+
+You cant change the value of the msg
+let message= 1
+if (message == null ||message == 2 ||message == undefined )
+{
+    console.log ("go away");
+}
+else
+{
+    console.log( "welcome boss");
+}
+// 12.Fix the code to welcome the boss...............
+let message;
+let lock = false;
+//Dont change any code below this 
+if (null || lock || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+  console.log(message);
+13.Fix the code to welcome the boss.....................
+let message;
+let lock = false;
+//Dont change any code below this
+if (lock && " " || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+console.log(message);
+14.Change the code to print 1 to 10 in 4 lines...........................
+let temp=[];
+for(let i=0;i<=10;i++){
+    temp.push(i)
+    
+}
+console.log(temp)
+console.log(temp)
+console.log(temp)
+console.log(temp)
+15.Change the code to print even numbers..............
+
+for (let num = 2; num <= 20; num += 2) {
+    console.log(num)
+  }
+16.Change the code to print all the gifts....................
+let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < 3; i++) {
+  console.log(`wrapped ${gifts[i]} and added a bow!`);
+}
+let countdown = 100;
+while (countdown > 0) {
+  countdown--;
+  if(countdown == -1)
+  {
+   console.log("bomb triggered");
+  }
+
+}
+17.Whats the msg printed and why?..................
+var lemein = "0";
+var lemeout = 0;
+var msg = "";
+if (lemein) {
+ msg +=" hi";
+ }
+if (lemeout) {
+ msg +=" Hello";
+}
+console.log(msg);//bcz the if condtion is ture on string value 
+18. Whats the msg printed and why? Guess you answer before running it.................
+
+var lemein = "hfjf";
+var lemeout = "5";
+var msg = "";
+if (lemein) {
+ msg += "hi";
+ }
+if (lemeout) {
+ msg += "hello";
+ 
+}
+console.log(msg);
+19.Write a code to print the numbers in the array.....
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var a="";
+for(let i=0;i<11;i++){
+    a+=numsArr[i];
+}
+ console.log(a)
+20.Write a code to print the numbers in the array..............
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = "";
+ 
+for (var i = 0; i < numsArr.length; i++) {
+    if(numsArr[i]<numsArr.length){
+
+        new_string += numsArr[i] + "," 
+    }else{
+        new_string += numsArr[i]  
+
+    }
+ 
+}
+console.log(new_string);
+21.Write a code to print from last to first with spaces (Make sure there is no space after the last element 1)........................
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = " ";
+ 
+for(let i=numsArr.length-1;i>=0;i--){
+    new_string+=numsArr[i]+" "
+}
+console.log(new_string)
+22.Write a code to replace the array value — If the number is even, replace it with ‘even’...................
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i] %2 == 0 )
+ {
+ numsArr[i] = "even"
+ }
+}
+console.log(numsArr);
+23.Write a code to replace the array value — If the index is even, replace it with ‘even’.............................
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+ if(i%2 == 0 )
+ {
+ numsArr[i] = "even"
+ }
+}
+console.log(numsArr);
+24.Write a code to add all the numbers in the array.........
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+let sum = 0;
+for (var i = 0; i <numsArr.length; i++) {
+ 
+ sum += numsArr[i]
+
+}
+console.log(sum);
+25.Write a code to add the even numbers only..............................
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+let sum=0;
+for (var i = 1; i <numsArr.length; i++) {
+ if(numsArr[i]%2 == 0){
+ sum += numsArr[i]
+ }
+}
+console.log(sum);
+26.Write a code to add the even numbers and subract the odd numbers.....................
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=100;
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i]%2==0)
+ {
+ sum += numsArr[i]
+ }
+ else{
+ sum -= numsArr[i]
+ }
+}
+console.log(sum);
+27.Write a code to print inner arrays........................
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var arr1 = numsArr[0];
+var arr2 = numsArr[1];
+console.log(arr1)
+console.log(arr2)
+28.Write a code to print elements in the inner arrays.....................
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var arr1 = numsArr[0];
+var arr2 = numsArr[1]
+let temp=[...arr1,...arr2]
+let str_all=""
+for (let index = 0; index < temp.length; index++) {
+    str_all+= temp[index];
+    
+}
+console.log(str_all)
+
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+for(var i=0;i<numsArr.length;i++){
+    console.log(numsArr[i])
+    var innerArray =numsArr[i];
+    let outpuInnerArray =[];
+    if(numsArr[i]%2==0){
+    for(var j=0;j<innerArray.length;j++){
+        if(innerArray[j]){
+            innerArray[j]="even"
+        }}
+        outpuInnerArray.push(innerArray);
+    }else{
+        for(var k=0;k<innerArray.length;k++){
+            if(innerArray[k]%2==0){
+                innerArray[k]="even"
+            }
+        }
+    }outpuInnerArray.push(innerArray);
+    console.log("outpuInnerArray",outpuInnerArray)
+}
+console.log("numsArr",numsArr)
+29.Fix the code to get the largest of three.............
+aa = (f) => {
+    
+  let b=f.sort();
+  let temp="";
+  for(let i=0;i<b.length;i++){
+      temp=b[i];
+  }
+  console.log(temp)
+
+   }
+   aa([1,2,3]);
+30.Fix the code to Sum of the digits present in the number..........................
+function add(f){
+    let sum=0;
+    for(let a of f ){
+        sum+=a
+    }
+    return sum;
+}
+let temp=add([1,2,3]);
+console.log(temp);
+31.Fix the code to Sum of all numbers using IIFE function..........................................
+(
+    function(a){
+        let sum=0;
+        for(let b of a){
+            sum+=b;
+        }
+        console.log(sum)
+    }
+)([9,8,7,6,5,4,3,2,1]);
+32.Fix the code to gen Title caps.....................
+var arr = ["guvi", "geek", "zen", "fullstack"];
+var ano = function(n) {
+   for(let a of n){
+   let b= a.charAt(0).toUpperCase()+a.slice(1);
+
+console.log(b)
+}
+}
+33.Fix the code to return the Prime numbers................................................
+const newArray=[1,2,3,5,10];
+let array=[];
+function data(a){
+
+    if(a<2){
+        return false;
+    }
+    for(let n of a){
+        for(let i =2;i<n;i++){
+            if(n%i===0){
+                return false;
+            }else{
+                array.push(n);
+                break;
+
+            }
+        }
+
+    
+    
+}
+}
+data(newArray);
+console.log(array)
+34.Fix the code to sum the number in that array...................................
+const num = [10, 20, 30, 40,50,60,70,80,90,100];
+let result =0; 
+for(let a of num){
+    result+=a
+
+}
+console.log(result)
+35. Fix the code to rotate an array by k times and return rotated array using IIFE function..........................
+var result = [];
+
+rotateArray = function(a, n, k){
+console.log(n)
+	k = k % n;
+	for (let i = 0; i < n; i++) {
+		if (i < k) {
+			result.push(a[n + i - k] );
+		}else {
+            	result.push(a[i - k]);
+		}
+	}
+}
+let input = [1, 2, 3, 6, 8, 6, 1, 9, 10, 12, 13]
+let N = input.length;
+let K = 3;
+rotateArray(input, N, K);
+console.log(result);
+36.Fix the code to reverse.............................
+(function(str){
+    let str1 = str.split("").reverse().join();
+    console.log(str1); 
+   })("abcd");
+37.Fix the code to remove duplicates.........................
+var res = function (a) {
+    return a.sort().filter(function(item, pos, ary) {
+        return !pos || item != ary[pos - 1];
+    });
+}
+ let b=  res(["guvi","geek","guvi","duplicate","geeK"])
+console.log(b)
+
